@@ -1,0 +1,229 @@
+@media only screen and (max-width:1200px) {
+    html,
+    body{
+        font-size: 14px;
+    }
+
+    .about_text{
+        margin-bottom: 20px;
+    }
+
+    .section_heading,
+    .contact_heading,
+    .package_heading,
+    .testimonial_heading{
+        margin: 50px 0 20px 0;
+    }
+    
+    .package-box{
+        margin: auto;
+    }
+
+    .row{
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width:1023px) {
+    html,
+    body{
+        font-size: 12px;
+    }
+
+    img[src="resources/img/Syco IT Sevices-logos_small.png"]{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .row{
+        padding: 0 2%;
+    }
+
+    .aboutbox{
+        margin-top: 60px;
+    }
+
+    .aboutbox:first-child{
+        text-align: left;
+        padding: 0 5% 0 0;
+    }
+
+    .lapimage{
+        padding-right: 5%;
+    }
+
+    .package-box{
+        width: 100%;
+    }
+
+    .package-heading{
+        margin-bottom: 30px;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    .footer-nav li{
+        margin-right: 15px;
+        
+    }
+
+    .social-links li{
+        margin-left: 20px;
+    }
+
+    footer p{
+        margin-top: 20px;
+        line-height: 1.3;
+    }
+    
+}
+
+@media only screen and (max-width:767px) {
+    html,
+    body{
+        font-size: 10px;
+    }
+
+    img[src="resources/img/Syco IT Sevices-logos_small.png"]{
+        width: 100px;
+        height: 100px;
+    }
+
+    .headerboxtext{
+        margin-bottom: 40px;
+    }
+
+    .about_heading{
+        margin-bottom: 20px;
+        
+    }
+
+    .section_heading{
+        font-size: 200%;
+        color: #000;
+        margin: 40px 0 10px 0;
+        
+    
+    }
+
+    .section_subheading::after{
+        
+        margin:15px auto 0 auto ;
+        
+    }
+
+    .testimonial_heading{
+        margin: 40px 0 10px 0 ;
+    
+    }
+
+    .package-box li{
+        padding: 3px 0;
+        font-size: 80%;
+    }
+
+    .package-price{
+        color: #ed07b7;
+        font-size: 200%;
+      
+    }
+    
+    
+    #arrow{
+        font-size: 100%;
+        margin-right: 5px;
+        width: 15px;
+        
+    }
+
+    cite{
+        display: block;
+        margin-top: 25px;
+        font-size: 110%;
+    }
+    
+    cite img{
+        height: 10%;
+        margin-right: 5px;
+    }
+
+    label{
+        font-size: 130%;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    img[src="resources/img/Syco IT Sevices-logos_small.png"]{
+        width: 90px;
+        height: 90px;
+    }
+    
+    .lapimage{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .aboutbox:last-child{
+        text-align: center;
+    }
+
+    .aboutbox:first-child{
+        text-align: center;
+    }
+
+    .span_1_of_4{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .span_1_of_3{
+        padding: 0 5%;
+        margin-bottom: 5px;
+    }
+
+    .contact-form{
+        width: 100%; 
+    }
+
+    .contact-label{
+        padding-left: 0;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea{
+    padding: 4px;
+    }
+
+    input[type=checkbox]{
+        margin: 5px 2.5px 5px ;
+    
+    }
+
+    label{
+        font-size: 130%;
+    }
+
+    .news{
+        margin: 5px 0;
+    }
+
+    textarea{
+        height: 80px;
+    }
+    
+    .footer-nav,
+    .social-links{
+        float: none;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .work_portfolio li{
+        width: 50%;
+    }
+
+}

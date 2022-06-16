@@ -1,0 +1,625 @@
+@font-face {
+    font-family: sarala;
+    src: url(/vendors/fonts/Sarala-Regular.ttf);
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(/vendors/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear-fix{
+    zoom: 1;
+}
+.clear-fix::after{
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+}
+
+html,body{
+    background-color: white;
+    color: black;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    font-family: worksans, Arial, sans-serif;
+    font-weight: 300;
+}
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+/*-------------Styling Header-------*/
+
+header{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.8)), url(img/header-img.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.8)), url(img/header-img.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1{
+    font-size: 300%;
+    color: whitesmoke;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 150%;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+.headerbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.headerboxtext{
+    margin-bottom: 80px;
+}
+
+/* Styling the button */
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 200px;
+    display: inline-block;
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: #ed07b7;
+    color: whitesmoke;
+
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #BD0592;
+}
+
+/* Styling logo navigation menu */
+.logo{
+   width: auto;
+   float: left;
+   margin-left: 2px;
+}
+
+img[src="resources/img/Syco IT Sevices-logos_small.png"]{
+    width: 150px;
+    height: 150px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 40px;
+}
+
+.main-nav li{
+    display: inline-block;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    margin-right: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sticky img[src="resources/img/Syco IT Sevices-logos_small.png"]{
+    width: 80px;
+    height: 80px;
+}
+
+.sticky .main-nav{
+    margin-top: 20px;
+}
+
+.sticky .main-nav li{
+    color: #555;
+    padding: 5px;
+}
+
+/* Adding Hover Effects on the link */
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #ed07b7;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    text-decoration: none;
+    color: #555;
+    padding-bottom: 3px;
+}
+
+/* Styling the About Section */
+
+.aboutbox{
+    margin-top: 100px;
+}
+
+.lapimage{
+    width: 80%;
+}
+
+.about_heading{
+    color: black;
+    font-size: 250%;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+}
+
+.about_text{
+    color: grey;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.btnghost:link,
+.btnghost:visited{
+    border: 2px solid #ed07b7;
+    color: #ed07b7;
+    display: inline-block;
+}
+
+.btnghost:hover,
+.btnghost:active{
+    background-color: #ed07b7;
+    color: white;
+}
+/* Button */
+
+.aboutbox:first-child{
+    text-align: left;
+    padding: 0 5%;
+}
+
+.aboutbox:last-child{
+    text-align: right;
+}
+
+.about-section{
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+/* About Us section */
+
+
+/* ---------Our Work Section ------------ */
+
+.section_heading{
+    font-size: 200%;
+    color: #000;
+    margin: 60px 0 20px 0;
+    
+
+}
+
+.section_subheading{
+    font-size: 150%;
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.section_subheading::after{
+    display: block;
+    height: 2px;
+    width: 20%;
+    margin:20px auto 0 auto ;
+    background-color: #ed07b7;
+    content: "";
+}
+
+.work-section{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* ------------ image------------ */
+.work_portfolio{
+    
+    list-style: none;
+    width: 100%;
+}
+
+.work_portfolio li{
+    display: block;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+
+.portfolio-image{
+    background-color: #000;
+}
+
+.portfolio-image img{
+    width: 100%;
+    opacity: .6;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    height: auto;
+    -webkit-transition: opacity .5s,-webkit-transform .5s;
+    transition: opacity .5s,-webkit-transform .5s;
+    transition: transform .5s,opacity .5s;
+    transition: transform .5s,opacity .5s,-webkit-transform .5s;
+}
+.work-para{
+    color: #ffff;
+}
+
+.portfolio-image img:hover{
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+
+}
+
+/* OUR WORK SECTION ENDS HERE */
+
+/* ---------SERVICES SECTION---------- */
+
+.service-section{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.service-box{
+    padding: 1% 3%;
+
+}
+.service-image{
+    margin-bottom: 30px;
+}
+
+.service-heading{
+    font-size: 150%;
+    margin-bottom: 20px;
+    font-weight: 300;
+
+}
+
+.service-para{
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 90%;
+
+}
+
+.service-link{
+    color: #ed07b7;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* ---------Services Section ----------- */
+
+/* ---------------Featured Clients Section-------- */
+
+.partners-section{
+    text-align: center;
+    color: white;
+}
+
+.partner-logo{
+    width: 70%;
+    height: auto;
+}
+/* ----------------------Testimonial----------- */
+
+.testimonial-section{
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.8)),url(img/testimonial-background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.8)),url(img/testimonial-background.jpg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffff;
+}
+
+.testimonial_heading{
+    font-size: 250%;
+    margin: 100px 0 40px 0 ;
+
+}
+
+.testimonial-box{
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote::before{
+    content: "\201C";
+    display: block;
+    font-size: 300%;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+cite{
+    display: block;
+    margin-top: 25px;
+    font-size: 150%;
+}
+
+cite img{
+    border-radius: 50%;
+    height: 20%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* -------------- Testimonial ------------ */
+
+
+/* ---------------Popular Packages --------- */
+
+.packages-section{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.package_heading{
+    color: #000;
+    font-size: 250%;
+    margin: 100px 0 40px 0 ;
+}
+
+.package-box{
+    background-color: #ffff;
+    width: 90%;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 4px rgb(189, 184, 184) ;
+    text-align: left;
+}
+
+.package-heading{
+    font-size: 150%;
+    color: #555;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.package-price{
+    color: #ed07b7;
+    font-size: 300%;
+    font-weight: 50;
+    margin-bottom: 10px;
+}
+
+.package-price span{
+    font-size: 40%;
+    font-weight: 500;
+}
+
+.package-para{
+    color: #555;
+    font-size: 90%;
+    margin-bottom: 10px;
+}
+
+.package-box ul{
+    list-style: none;
+}
+
+#arrow{
+    color: #ed07b7;
+    font-size: 150%;
+    font-weight: 200;
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.package-box li{
+    color: #555;
+    padding: 5px 0;
+}
+
+.package-box div{
+    padding: 10px;
+    border-bottom: 1px solid #efefef;
+} 
+
+.package-box div:last-child{
+    border: 0;
+    text-align: center;
+    padding-left: 0;
+}
+
+.package-box div:first-child{
+    background-color: #fafafa;
+}
+
+/* --------------Packages Section------------- */
+
+/* -------------Contact Form------------------- */
+
+.contact-section{
+    text-align: center;
+}
+
+.contact_heading{
+    color: #000;
+    font-size: 250%;
+    margin: 100px 0 40px 0 ;
+}
+
+.contact_heading::after{
+    display: block;
+    height: 2px;
+    width: 30%;
+    margin:20px auto 0 auto ;
+    background-color: #ed07b7;
+    content: "";
+}
+
+.contact-form{
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    color: #555;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #ffff;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px ;
+
+}
+
+.news{
+    margin: 10px 0;
+}
+textarea{
+    height: 100px;
+}
+
+input[type=submit]{
+    border: 0;
+}
+
+*:focus{
+    outline: none;
+}
+/* ------------------Contact----------- */
+
+/* ==============Footer============== */
+
+footer{
+    background-color: #333;
+    padding: 30px;
+    font-size: 90%;
+    color: #888;
+}
+
+.footer-nav{
+    float: left;
+}
+
+.social-links{
+    float: right;
+}
+.footer-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+footer a:link,
+footer a:visited
+{
+    text-decoration: none;
+    color: #888;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+footer a:hover,
+footer a:active{
+    color: #fafafa;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+
+.bi-whatsapp,
+.bi-facebook,
+.bi-instagram,
+.bi-twitter{
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.bi-whatsapp:hover{
+    color: rgb(4, 117, 4);
+}
+
+.bi-twitter:hover{
+    color: #00aced;
+    
+}
+
+.bi-facebook:hover{
+    color: #3b5998;
+}
+
+.bi-instagram:hover{
+   color: #517fa4;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 2px #efefef;
+    width: 100%;
+    
+}
+
